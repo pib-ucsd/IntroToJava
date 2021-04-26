@@ -1,0 +1,1 @@
+ds_queue_enqueue(global.consoleQueue, "French Fry Side Kick!");

@@ -1,0 +1,1 @@
+ds_queue_enqueue(global.consoleQueue, "Ooo piece of candy!");

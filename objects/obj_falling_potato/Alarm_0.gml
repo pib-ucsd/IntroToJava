@@ -1,0 +1,1 @@
+instance_create_depth(room_width / 2 - 15, room_height - 150, depth - 1, o_continue);

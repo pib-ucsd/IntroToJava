@@ -1,0 +1,12 @@
+var offset = 68;
+var fnt = draw_get_font();
+var clr = draw_get_color();
+draw_set_alpha(0.6);
+draw_set_color(c_black);
+draw_rectangle(0, 0, room_width, room_height, -1);
+draw_set_alpha(1);
+draw_set_font(font_popup);
+draw_self();
+draw_text_ext(x + offset, y + offset,  words, -1, sprite_width - 2 * offset);
+draw_set_font(fnt);
+draw_set_color(clr);

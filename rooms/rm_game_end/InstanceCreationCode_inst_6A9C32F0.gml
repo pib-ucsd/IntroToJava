@@ -1,0 +1,1 @@
+image_index = image_number - image_number * 3 / 4;

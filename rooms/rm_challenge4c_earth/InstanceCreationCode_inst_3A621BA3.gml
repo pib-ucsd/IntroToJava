@@ -1,0 +1,12 @@
+ds_map_clear(global.answers);
+ds_map_add(global.answers, inst_64F54D60, "EarthPowah earth1 = new EarthPowah();");
+ds_map_add(global.answers, inst_1925B375, "earth1.diamondStatus");
+ds_map_add(global.answers, inst_1A876FCC, "earth1.strength");
+ds_map_add(global.answers, inst_29CA0005, "boolean diamondStatus = true;");
+ds_map_add(global.answers, inst_7356D5E9, "boolean shieldActivated = earth1.diamondShield();");
+ds_map_add(global.answers, inst_66D33C8, "shieldActivated");
+ds_map_add(global.answers, inst_C67CB1D, "earth1.diamondActivate();");
+ds_map_add(global.answers, inst_B00D417, "earth1.diamondShield()");
+ds_map_add(global.answers, inst_6640A185, "earth1.strength += 1;");
+ds_map_add(global.answers, inst_3CCC551B, "int returnedStrength = earth1.rockSlide();");
+ds_map_add(global.answers, inst_578F4689, "returnedStrength");

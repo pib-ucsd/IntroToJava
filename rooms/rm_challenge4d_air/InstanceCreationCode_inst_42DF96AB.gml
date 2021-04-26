@@ -1,0 +1,16 @@
+ds_map_clear(global.answers);
+ds_map_add(global.answers, inst_46058C86, "attack = false;");
+ds_map_add(global.answers, inst_25392C7C, "airStrength = 0;");
+ds_map_add(global.answers, inst_56D62AFB, "this.attack = attack;");
+ds_map_add(global.answers, inst_5367A805,  "airStrength = strength;");
+ds_map_add(global.answers, inst_2C144285,  "!this.attack");
+ds_map_add(global.answers, inst_6A16CDEE,  "numAirAttacks + 1 < MAX_AIR_ATTACKS");
+ds_map_add(global.answers, inst_3350E6A3,  "damage += airStrength * numAttacks;");
+ds_map_add(global.answers, inst_33D402C9,  "return damage;");
+ds_map_add(global.answers, inst_176E7FBD,  "AirPowah air1 = new AirPowah();");
+ds_map_add(global.answers, inst_7F2C304,  "AirPowah air2 = new AirPowah(true, 3);");
+ds_map_add(global.answers, inst_753A801,  "int numAttacks = 2;");
+ds_map_add(global.answers, inst_12F83B4,  "air1.airAttack(numAttacks)");
+ds_map_add(global.answers, inst_5A82A6ED,  "air2.airAttack(numAttacks)");
+ds_map_add(global.answers, inst_34B18E37,  "numAttacks += 2;");
+ds_map_add(global.answers, inst_435B4EE0,  "air2.airAttack(numAttacks)");
