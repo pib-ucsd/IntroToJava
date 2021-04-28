@@ -1,0 +1,1 @@
+show_debug_message("rm challenge 1 created");

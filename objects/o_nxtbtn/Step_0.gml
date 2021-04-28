@@ -1,7 +1,6 @@
 //using step instead of left pressed because I'm jank and need to do this
 if(leftReleased && !global.paused){
-	show_debug_message("scenenum: " + string(global.scenenum) + " dia: " + string(o_dialogue.dia) + " " + string(room));
-	show_debug_message(room_get_name(room));
+	show_debug_message("scenenum: " + string(global.scenenum) + " dia: " + string(o_dialogue.dia) + " " + string(room_get_name(room)));
 	#region All the stuff that should occur in the left pressed event
 	#region this stuff are the event triggers
 		var eventFlag		= global.arrOfEventFlagCodes[global.scenenum, o_dialogue.dia + 1];

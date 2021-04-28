@@ -36,6 +36,7 @@ with(whiteBoxIds[currentWhiteBoxId])
 	event_perform(ev_mouse, ev_left_press);
 	
 // but if its the first selection, we want kids to see the top of the code
-var delta = 0 - o_cal_challenge2.y;
-with (o_cal_demo2_whiteBox) y += delta;
-with(o_cal_challenge2)		y += delta;
+var delta = 0
+with(o_challenge_parent)		delta -= y;
+with (o_cal_demo2_whiteBox)		y += delta;
+with (o_challenge_parent)		y += delta;

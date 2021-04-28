@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_computer_screen",
-    "path": "sprites/spr_computer_screen/spr_computer_screen.yy",
+    "name": "bg_bedroom",
+    "path": "sprites/bg_bedroom/bg_bedroom.yy",
   },
   "solid": false,
   "visible": true,

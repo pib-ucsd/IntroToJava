@@ -28,7 +28,8 @@ if(dia <= array_length_2d(global.dialogue, scenenum)){
 			charTemp.image_yscale = .6;
 		}
 		else if(global.speak[scenenum,dia] == "Rimac"){
-			charTemp = instance_create_layer(1568, 160, "inst_static_chars", o_fpotat);
+			charTemp = instance_create_layer(1568+70, 160+50, "inst_static_chars", o_fpotat);
+			// +70 and +50 for html5 version w/o sprite
 			charTemp.image_xscale = .8;
 			charTemp.image_yscale = .8;
 		}

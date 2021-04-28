@@ -5,7 +5,7 @@ if(global.paused){
 
 transparency = clamp(transparency + (fade * 0.01), 0, 1);
 
-if (transparency == 1){	
+if (transparency >= .95){	
 	global.rmnum++;
 	//if(room == rm_victory) {
 		//global.scenenum++;
@@ -13,11 +13,13 @@ if (transparency == 1){
 	//global.scenenum++;
 	room_goto_next();
 	fade = -1;
+	show_debug_message("go to next rm");
 }
 	
-if ((transparency < 0.0001) && (fade == -1)){
+if ((transparency < 0.001) && (fade == -1)){
 	instance_destroy();
-	scr_save();
+	show_debug_message("No more fade");
+	//scr_save();
 }
 
 draw_set_color(c_black);

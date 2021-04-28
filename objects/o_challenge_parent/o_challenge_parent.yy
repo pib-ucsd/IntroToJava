@@ -1,20 +1,14 @@
 {
-  "spriteId": {
-    "name": "s_cal_chlng1",
-    "path": "sprites/s_cal_chlng1/s_cal_chlng1.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "o_challenge_parent",
-    "path": "objects/o_challenge_parent/o_challenge_parent.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
-  "physicsGroup": 0,
+  "physicsGroup": 1,
   "physicsDensity": 0.5,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.1,
@@ -31,7 +25,7 @@
     "path": "folders/Objects/og_cal_demo.yy",
   },
   "resourceVersion": "1.0",
-  "name": "o_cal_chllng1",
+  "name": "o_challenge_parent",
   "tags": [],
   "resourceType": "GMObject",
 }
