@@ -6,7 +6,7 @@ var yOff = 0;
 var xOff = string_width(topics[pg]);
 //check if mouse clicked on the first 'topic box'
 var found = point_in_rectangle(mouse_x, mouse_y, xP, yP + yOff, xP + xOff, yP + yOff + string_height(topics[pg]));
-while((!found && pg < array_length_1d(img)) && (img[++pg] <= global.pageMax)){
+while((!found && pg < array_length(img)) && (img[++pg] <= global.pageMax)){
 	//condition 1: img[++pg] is the page index of the notebook page
 	//condition 2: check to see if code has found where user pressed and not out of range of img array
 	yOff += 80;

@@ -11,18 +11,18 @@ if(print) {
 	
 	var tempCounter = 1;
 	while(!ds_queue_empty(global.consoleQueue)){
-		consoleArr[tempCounter++] = ds_queue_dequeue(global.consoleQueue);
+		consoleArr[tempCounter] = ds_queue_dequeue(global.consoleQueue);
 	}
 	
-	for(var i = array_length_1d(consoleArr) - 1; i + 1 > 0; i--){
-		if(i == array_length_1d(consoleArr) - 1){
-			draw_text_transformed(x + 30, y + sprite_height - (20 + string_height(prompt)) * heightMultiplier++ * textScale, consoleArr[array_length_1d(consoleArr) - heightMultiplier], textScale, textScale, 0);
+	for(var i = array_length(consoleArr) - 1; i + 1 > 0; i--){
+		if(i == array_length(consoleArr) - 1){
+			draw_text_transformed(x + 30, y + sprite_height - (20 + string_height(prompt)) * heightMultiplier * textScale, consoleArr[array_length(consoleArr) - heightMultiplier++], textScale, textScale, 0);
 		}
-		else if(i == array_length_1d(consoleArr) - 2){
-			draw_text_transformed(x + 30, y + sprite_height - (11 + string_height(prompt)) * heightMultiplier++ * textScale, consoleArr[array_length_1d(consoleArr) - heightMultiplier], textScale, textScale, 0);
+		else if(i == array_length(consoleArr) - 2){
+			draw_text_transformed(x + 30, y + sprite_height - (11 + string_height(prompt)) * heightMultiplier * textScale, consoleArr[array_length(consoleArr) - heightMultiplier++], textScale, textScale, 0);
 		}
 		else{
-			draw_text_transformed(x + 30, y + sprite_height - 9 - (3 + string_height(prompt)) * heightMultiplier++ * textScale, consoleArr[array_length_1d(consoleArr) - heightMultiplier], textScale, textScale, 0);
+			draw_text_transformed(x + 30, y + sprite_height - 9 - (3 + string_height(prompt)) * heightMultiplier * textScale, consoleArr[array_length(consoleArr) - heightMultiplier++], textScale, textScale, 0);
 		}
 	}
 }

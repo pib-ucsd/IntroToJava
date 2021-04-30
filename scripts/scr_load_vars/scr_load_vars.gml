@@ -7,7 +7,7 @@ function scr_load_vars() {
 
 	global.answers = ds_queue_create();
 	if(global.console_print_array != "no print") {
-		var size = array_length_1d(global.console_print_array);
+		var size = array_length(global.console_print_array);
 		for(var i = 0; i < size; i++) {
 			ds_queue_enqueue(global.answers, global.console_print_array[i]);
 		}

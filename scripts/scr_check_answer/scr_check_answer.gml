@@ -6,7 +6,7 @@ function scr_check_answer() {
 	answers = global.answers[? global.selectedID];
 	if(is_array(answers)){
 		//show_debug_message("is array");
-		for(var i = 0; i < array_length_1d(answers); i++) {
+		for(var i = 0; i < array_length(answers); i++) {
 			if(string_replace_all(keyboard_string + aft, " ", "") == string_replace_all(answers[i], " ", "")) {
 				instance_destroy(global.selectedID);
 				str = "";
