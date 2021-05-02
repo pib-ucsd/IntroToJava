@@ -15,3 +15,4 @@ xOrigin = 0;
 xOriginDelta = 512 / 75 / deltaSpeed;
 
 deltaMultiplier = 1;
+image_speed = 0;

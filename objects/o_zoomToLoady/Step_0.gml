@@ -11,6 +11,6 @@ if(flag){
 }
 
 if(size_w < 330){
-	scr_save_end_game();
+	//scr_save_end_game();
 	room_goto(rm_game_end);
 }

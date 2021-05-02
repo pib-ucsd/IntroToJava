@@ -2,6 +2,7 @@ prevNot = o_not.image_index;
 vidInst = id;
 playInst = id;
 restartInst = id;
+image_speed = 0;
 
 offset = 120;
 

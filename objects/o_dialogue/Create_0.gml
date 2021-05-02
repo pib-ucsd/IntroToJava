@@ -13,5 +13,6 @@ dia			= global.dia;	// the current dialogue index in the dialogue array to be sh
 diaPrev		= dia - 1;
 theCurrDia	= "";
 global.dia	= 0;			// reset so that the value isn't kept over multiple scenes
+depth		+= 1;
 
 draw_set_halign(fa_left);

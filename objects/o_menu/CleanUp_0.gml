@@ -1,1 +1,1 @@
-show_debug_message("menu destroyed");
+//show_debug_message("menu destroyed");
