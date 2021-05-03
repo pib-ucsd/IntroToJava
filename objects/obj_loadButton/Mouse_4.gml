@@ -1,3 +1,5 @@
+
+room_goto(rm_select_scene);
 /*
 if(global.paused) {
 	exit;
