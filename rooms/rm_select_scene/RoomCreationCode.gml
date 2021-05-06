@@ -16,21 +16,27 @@ scenes[ind++] = {
 	spInd: bg_bedroom,
 	rmInd: rm_scene2_1,
 	title: "Hello World!",
-	index: ind
+	index: ind,
+	scenenum: 1,
+	dia: 0
 };
 	// 2nd scene
 scenes[ind++] = {
 	spInd: bg_grayBuilding,
 	rmInd: rm_scene2_2,
 	title: "Variables",
-	index: ind
+	index: ind,
+	scenenum: 3,
+	dia: 0
 };
 	// 3rd scene
 scenes[ind++] = {
 	spInd: bg_building,
 	rmInd: rm_scene2_5,
 	title: "Arithmetic",
-	index: ind
+	index: ind,
+	scenenum: 4,
+	dia: 3
 };
 	// 4th scene
 scenes[ind++] = {
@@ -153,6 +159,11 @@ for (var i=0; i<totalScenes; i++){
 		targetWidth = gridBoxWidthPlusSep - gridBoxHorSep;
 		targetHeight = gridBoxHeightPlusSep - gridBoxVerSep;
 		pageMax = ceil(totalScenes/(numRows*numCols));
+		
+		if (variable_struct_exists(scenes[i], "scenenum"))
+			scenenum = scenes[i].scenenum;
+		if (variable_struct_exists(scenes[i], "dia"))
+			dia = scenes[i].dia;
 	}
 	
 	curX += gridBoxWidthPlusSep;

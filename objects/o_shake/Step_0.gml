@@ -2,22 +2,23 @@ if(global.paused){
 	exit;
 }
 if(shake){
+	show_debug_message("shaking dude " + string(first)+ " " + string(mini))
 	if(first){
 		first = false;
 		if(mini){
 			range = 5;
-			//show_debug_message("mini");
+			show_debug_message("mini");
 		}
 		else if(miniMini){
 			range = 2;
-			//show_debug_message("miniMini");
+			show_debug_message("miniMini");
 		}
 		else{
 			range = 8;
-			//show_debug_message("big");
+			show_debug_message("big");
 		}
 		alarm[0] = 90;
-		//show_debug_message("shaking");
+		show_debug_message("shaking");
 	}
 	
 	camera_set_view_pos(view_camera[0], view_x + random_range(-range,range), view_y + random_range(-range,range));

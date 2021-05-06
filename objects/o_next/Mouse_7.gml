@@ -11,7 +11,10 @@ if(!global.ignoreNextButton){
 	show_debug_message("right to be destroyed");
 	}
 	show_debug_message("o_next to be destroyed");
-	o_notebook_widget.visible = true;
+	
+	if (instance_exists(o_notebook_widget))
+		o_notebook_widget.visible = true;
+	
 	global.notebookByDialogue = false;
 	instance_destroy();
 	room_goto(global.rmnum);

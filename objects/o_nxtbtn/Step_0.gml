@@ -7,12 +7,18 @@ if(leftReleased && !global.paused){
 		var eventAllowed	= !global.arrOfFinishedEvents[global.scenenum, o_dialogue.dia + 1];
 		var notebookCode	= global.arrOfNotebookFlagCodes[global.scenenum, o_dialogue.dia + 1];
 		var scenenumPrev	= global.scenenum;		// for updating finished events arr but if scenenum changed
+		
+		show_debug_message(string(eventFlag) + " and " + string(eventAllowed));
+		
 		if(eventFlag != -1 && eventAllowed){
 			#region various codes
 			if(eventFlag == eventCodes.notebook){
 				global.scenenum++;
 				global.rmnum++;
-				o_notebook_widget.visible = false;	//to prevent widget from accessed while in notebook
+				
+				if (instance_exists(o_notebook_widget))
+					o_notebook_widget.visible = false;	//to prevent widget from accessed while in notebook
+					
 				//if correct scenenum, use notebookCode to determine global.pagenum and global.pageMax (hard code)
 				switch(notebookCode){
 				case 0:
@@ -72,15 +78,18 @@ if(leftReleased && !global.paused){
 					global.pageMax = 1;
 					show_debug_message("o_nxtbtn | notebookCode: " + string(notebookCode));
 				}
+				
+				show_debug_message("nodebook code: "+ string(notebookCode));
+				
 				if(notebookCode != -1){ // redundant check for 
 					global.notebookByDialogue = true;
 					room_goto(rm_not2);
 				}
 			}
-			else if(eventFlag == eventCodes.flash){
+			else if(eventFlag == eventCodes.flash){show_debug_message("flash");
 				instance_create_depth(0,0,-1000,o_flash);
 			}
-			else if(eventFlag == eventCodes.next){
+			else if(eventFlag == eventCodes.next){show_debug_message("next");
 				global.scenenum ++;
 				global.rmnum ++;
 				if(room == rm_scene6_1) {
@@ -88,41 +97,42 @@ if(leftReleased && !global.paused){
 				}
 				room_goto_next();
 			}
-			else if(eventFlag == eventCodes.chlg){
+			else if(eventFlag == eventCodes.chlg){show_debug_message("chlg");
 				global.scenenum ++;
 				global.rmnum ++;
 				//kept here in case challenges are not the rooms after the dialogue
 				room_goto_next();
 			}
-			else if(eventFlag == eventCodes.miniShake){
+			else if(eventFlag == eventCodes.miniShake){show_debug_message("minishake");
+				if (!instance_exists(o_shake)) instance_create_depth(0, 0, 0, o_shake);
 				o_shake.mini = true;
 				o_shake.shake = true;
-				show_debug_message("miniShakeTriggered");
 			}
-			else if(eventFlag == eventCodes.miniMiniShake){
+			else if(eventFlag == eventCodes.miniMiniShake){show_debug_message("miniminishake");
+				if (!instance_exists(o_shake)) instance_create_depth(0, 0, 0, o_shake);
 				o_shake.miniMini = true;
 				o_shake.shake = true;
 			}
-			else if(eventFlag == eventCodes.fadeGQ && fadeAllowed){
+			else if(eventFlag == eventCodes.fadeGQ && fadeAllowed){show_debug_message("fadegq");
 				o_GQ.fade = true;
 				fadeAllowed = false;
 				leftReleased = false;
 				eventFlag = -1;
 				exit;
 			}
-			else if(eventFlag == eventCodes.smokingGQ){
+			else if(eventFlag == eventCodes.smokingGQ){show_debug_message("smokegq");
 				//effect_create_below(ef_smoke,o_dialogue.charTemp.x,o_dialogue.charTemp.y + o_dialogue.charTemp.sprite_height * 1 / 4,1,c_gray);
 				//same as fading gs, occurs at a certain time (I didn't figure out how to do so)
 			}
-			else if(eventFlag == eventCodes.openGate){
+			else if(eventFlag == eventCodes.openGate){show_debug_message("opengate");
 				global.scenenum ++;
 				global.rmnum ++;
 				room_goto_next();//openGate can be replaced by next
 			}
-			else if(eventFlag == eventCodes.fadeGS){
+			else if(eventFlag == eventCodes.fadeGS){show_debug_message("fadegs");
 				//since the fade has to occur at a specific time, I found it easier to make this event occur with its own code within the o_dialogue object
 			}
-			else if(eventFlag == eventCodes.transform){
+			else if(eventFlag == eventCodes.transform){show_debug_message("transform");
 				global.scenenum ++;
 				global.rmnum ++;
 				global.rmnum ++;
@@ -131,28 +141,28 @@ if(leftReleased && !global.paused){
 				//could just do multiple rooms here
 				room_goto_next();
 			}
-			else if(eventFlag == eventCodes.bigShake){
+			else if(eventFlag == eventCodes.bigShake){show_debug_message("bigshake");
 				o_shake.shake = true;
 			}
-			else if(eventFlag == eventCodes.miniGame){
+			else if(eventFlag == eventCodes.miniGame){show_debug_message("minigame");
 				global.scenenum ++;
 				global.rmnum ++;
 				room_goto_next();
 			}
-			else if(eventFlag == eventCodes.widget){
+			else if(eventFlag == eventCodes.widget){show_debug_message("widget");
 				o_notebook_widget.visible = true;
 				global.notebookWidgetVisible = true;
 			}
-			else if(eventFlag == eventCodes.fade){
+			else if(eventFlag == eventCodes.fade){show_debug_message("fade");
 				global.scenenum ++;
 				instance_create_depth(0,0,-1600, obj_fade);
 			}
-			else if(eventFlag == eventCodes.zoomLoady){
+			else if(eventFlag == eventCodes.zoomLoady){show_debug_message("zoomloady");
 				if(instance_exists(o_zoomToLoady)){
 					o_zoomToLoady.flag = true;
 				}
 			}
-			else if(eventFlag == eventCodes.endGame){
+			else if(eventFlag == eventCodes.endGame){show_debug_message("endgame");
 				room_goto(rm_game_end);
 			}
 			#endregion
@@ -166,6 +176,7 @@ if(leftReleased && !global.paused){
 			eventFlag = -1;
 		}
 	#endregion
+	
 
 	//this part of the code
 	//is the functionality of the character by character appearing effect
