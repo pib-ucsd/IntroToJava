@@ -9,4 +9,5 @@ if(instance_exists(o_menu)){
 if(instance_exists(o_notebook_widget)){
 	instance_destroy(o_notebook_widget);
 }
+window_set_cursor(cr_default);
 room_goto(rm_start);

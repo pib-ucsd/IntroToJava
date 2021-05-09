@@ -24,3 +24,4 @@ menu_home = instance_create_depth(430, 320, depth - 1, o_home);
 
 // create mute music button (at depth higher..more negative..than menu)
 menu_mute = instance_create_depth(1056, 330, depth - 1, o_mute);
+window_set_cursor(cr_default);

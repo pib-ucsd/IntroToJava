@@ -25,4 +25,6 @@ if(flg){
 	// make the potat sprite not have a skin
 	// scr_setup_no_skin_potat();
 	// ^ DO NOT DO
+	window_set_cursor(cr_default);
+	
 }

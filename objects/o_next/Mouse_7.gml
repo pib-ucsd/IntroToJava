@@ -18,4 +18,5 @@ if(!global.ignoreNextButton){
 	global.notebookByDialogue = false;
 	instance_destroy();
 	room_goto(global.rmnum);
+	window_set_cursor(cr_default);
 }

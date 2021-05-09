@@ -83,6 +83,7 @@ if(leftReleased && !global.paused){
 				
 				if(notebookCode != -1){ // redundant check for 
 					global.notebookByDialogue = true;
+					window_set_cursor(cr_default);
 					room_goto(rm_not2);
 				}
 			}
@@ -95,12 +96,14 @@ if(leftReleased && !global.paused){
 				if(room == rm_scene6_1) {
 					global.dia = 0;
 				}
+				window_set_cursor(cr_default);
 				room_goto_next();
 			}
 			else if(eventFlag == eventCodes.chlg){show_debug_message("chlg");
 				global.scenenum ++;
 				global.rmnum ++;
 				//kept here in case challenges are not the rooms after the dialogue
+				window_set_cursor(cr_default);
 				room_goto_next();
 			}
 			else if(eventFlag == eventCodes.miniShake){show_debug_message("minishake");
@@ -127,6 +130,7 @@ if(leftReleased && !global.paused){
 			else if(eventFlag == eventCodes.openGate){show_debug_message("opengate");
 				global.scenenum ++;
 				global.rmnum ++;
+				window_set_cursor(cr_default);
 				room_goto_next();//openGate can be replaced by next
 			}
 			else if(eventFlag == eventCodes.fadeGS){show_debug_message("fadegs");
@@ -139,6 +143,7 @@ if(leftReleased && !global.paused){
 				//start animation of ld transformation
 				//trigger change of arena to dark arena
 				//could just do multiple rooms here
+				window_set_cursor(cr_default);
 				room_goto_next();
 			}
 			else if(eventFlag == eventCodes.bigShake){show_debug_message("bigshake");
