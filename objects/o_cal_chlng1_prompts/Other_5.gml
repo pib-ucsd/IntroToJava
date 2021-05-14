@@ -4,3 +4,4 @@ if(ds_exists(global.consoleQueue, ds_type_queue)){
 		show_debug_message(ds_queue_dequeue(global.consoleQueue));
 	}
 }
+window_set_cursor(cr_default);

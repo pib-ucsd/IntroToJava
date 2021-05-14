@@ -15,4 +15,5 @@ if(flg){
 	// scr_setup_no_skin_potat();
 	// ^ DO NOT DO
 	global.paused = false;
+	window_set_cursor(cr_default);
 }

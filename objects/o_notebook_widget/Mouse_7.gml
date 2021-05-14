@@ -19,4 +19,5 @@ if(visible && image_alpha){
 	room_persistent = true;
 	notebook = true;
 	room_goto(rm_not2);
+	window_set_cursor(cr_default);
 }

@@ -14,3 +14,4 @@ else{
 	o_blank.vidInst.image_speed = 1;
 	image_index = 1;
 }
+window_set_cursor(cr_default);

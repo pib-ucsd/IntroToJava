@@ -6,3 +6,4 @@ global.scenenum++;
 global.mc++;
 room_goto_next();
 instance_destroy();
+window_set_cursor(cr_default);
