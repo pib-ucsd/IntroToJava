@@ -7,3 +7,5 @@ o_menu.image_xscale = .68;
 o_menu.image_yscale = .68;
 
 room_goto(rm_select_scene);
+
+window_set_cursor(cr_default);

@@ -155,7 +155,13 @@ if(leftReleased && !global.paused){
 				room_goto_next();
 			}
 			else if(eventFlag == eventCodes.widget){show_debug_message("widget");
-				o_notebook_widget.visible = true;
+				if(instance_exists(o_notebook_widget)){
+					o_notebook_widget.visible = true;
+				}
+				else {
+					instance_create_depth(1762, 45, 0, o_notebook_widget);
+					with(o_notebook_widget) visible = true;
+				}
 				global.notebookWidgetVisible = true;
 			}
 			else if(eventFlag == eventCodes.fade){show_debug_message("fade");
