@@ -4,7 +4,7 @@
 
 
 // time that page switches
-secToTransition = 1;
+secToTransition = 0.75;
 
 
 // a tracker to track current page

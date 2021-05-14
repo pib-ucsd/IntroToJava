@@ -32,81 +32,121 @@ scenes[ind++] = {
 	// 3rd scene
 scenes[ind++] = {
 	spInd: bg_building,
-	rmInd: rm_scene2_5,
+	rmInd: rm_scene2_4,
 	title: "Arithmetic",
 	index: ind,
-	scenenum: 4,
-	dia: 3
+	scenenum: 5,
+	dia: 0,
 };
 	// 4th scene
 scenes[ind++] = {
 	spInd: bg_building,
 	rmInd: rm_scene2_6,
 	title: "Arrays",
-	index: ind
+	index: ind,
+	scenenum: 7,
+	dia: 0,
+	moreSprites: {
+		sind: s_GQ,
+		xx: .5, yy: .5, ww: .5, hh: .5
+	}
 };
 	// 5th scene
 scenes[ind++] = {
 	spInd: bg_building,
 	rmInd: rm_scene2_7,
 	title: "More Variables",
-	index: ind
+	index: ind,
+	scenenum: 9,
+	dia: 0,
+	moreSprites: {
+		sind: s_loady,
+		xx: -0.25, yy: 0.25, ww: .75, hh: .75
+	}
 };
 	// 6th scene
 scenes[ind++] = {
 	spInd: bg_building,
 	rmInd: rm_scene2_8,
 	title: "Method Calls",
-	index: ind
+	index: ind,
+	scenenum: 9,
+	dia: 0,
+	moreSprites: {
+		sind: s_potat,
+		xx: 0.2, yy: .3, ww: .35, hh: .7
+	}
 };
 	// 7th scene
 scenes[ind++] = {
 	spInd: bg_underwaterGate,
 	rmInd: rm_scene2_10,
 	title: "Conditionals",
-	index: ind
+	index: ind,
+	scenenum: 10,
+	dia: 0,
 };
 	// 8th scene
 scenes[ind++] = {
 	spInd: bg_underwaterGateOpen,
 	rmInd: rm_scene3_25,
 	title: "While Loop",
-	index: ind
+	index: ind,
+	moreSprites: {
+		sind: s_GS,
+		xx: .5, yy: 0, ww: .5, hh: 1
+	}
 };
 	// 9th scene
 scenes[ind++] = {
 	spInd: bg_underwaterGateOpen,
 	rmInd: rm_scene3_3,
 	title: "For Loop",
-	index: ind
+	index: ind,
+	moreSprites: {
+		sind: spr_portal,
+		xx: .5, yy: .5, ww: .5, hh: .5
+	}
 };
 	// 10th scene
 scenes[ind++] = {
 	spInd: bg_candyland,
 	rmInd: rm_scene3_4,
 	title: "Classes",
-	index: ind
+	index: ind,
+	moreSprites: {
+		sind: spr_fire_elem
+	}
 };
 	// 11th scene
 scenes[ind++] = {
 	spInd: bg_candyland,
 	rmInd: rm_scene4_2,
 	title: "Classes + Objects",
-	index: ind
+	index: ind,
+	moreSprites: {
+		sind: spr_water_elem
+	}
 };
 	// 12th scene
 scenes[ind++] = {
 	spInd: bg_candyland,
 	rmInd: rm_scene4_3,
 	title: "Variable Scope",
-	index: ind
+	index: ind,
+	moreSprites: {
+		sind: spr_earth_elem
+	}
 };
 	// 13th scene
 scenes[ind++] = {
 	spInd: bg_candyland,
 	rmInd: rm_scene4_4,
 	title: "Advanced Methods",
-	index: ind
+	index: ind,
+	moreSprites: {
+		sind: spr_air_elem
+	}
 };
 	// 14th scene
 scenes[ind++] = {
@@ -129,19 +169,14 @@ scenes[ind++] = {
 // specify the padding left, right, top, bottom
 // and the horizontal and vertical distance between grids
 // then the scenes themselves will fill up the gaps
-var gridStartX = 100,
-	gridStartY = 100,
-	gridBoxHorSep = 100,
-	gridBoxVerSep = 100;
-	
-
-
-
+var gridStartX = 150, gridEndX = 150,
+	gridStartY = 100, gridEndY = 200,
+	gridBoxHorSep = 100, gridBoxVerSep = 100;
 
 // the code below generates the o_gotoRoom's at the correct locations
 
-var	gridBoxWidthPlusSep = (room_width - 2*gridStartX + gridBoxHorSep)/numCols,
-	gridBoxHeightPlusSep = (room_height-2*gridStartY+gridBoxVerSep)/numRows;
+var	gridBoxWidthPlusSep = (room_width - gridStartX - gridEndX + gridBoxHorSep)/numCols,
+	gridBoxHeightPlusSep = (room_height-gridStartY-gridEndY+gridBoxVerSep)/numRows;
 
 var curX, curY;
 for (var i=0; i<totalScenes; i++){
@@ -164,6 +199,9 @@ for (var i=0; i<totalScenes; i++){
 			scenenum = scenes[i].scenenum;
 		if (variable_struct_exists(scenes[i], "dia"))
 			dia = scenes[i].dia;
+		else dia = 0;
+		if (variable_struct_exists(scenes[i], "moreSprites"))
+			moreSprites = scenes[i].moreSprites;
 	}
 	
 	curX += gridBoxWidthPlusSep;
