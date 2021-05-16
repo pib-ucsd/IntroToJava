@@ -43,6 +43,24 @@ function scr_global_initializations() {
 	global.print_to_console_button = false;
 	global.console_print_array = "no print";
 	global.kbstring			= "";
+	global.chlgRmInd		= 0;
+	global.currRmId			= rm_start;
+	
+	global.chlgRms[13]		= rm_challenge4d_air;
+	global.chlgRms[0]		= rm_challenge1_helloWorld;
+	global.chlgRms[1]		= rm_challenge_fix_loady;
+	global.chlgRms[2]		= rm_challenge2a_variables;
+	global.chlgRms[3]		= rm_challenge2b_arithmetic;
+	global.chlgRms[4]		= rm_challenge2c_arrays;
+	global.chlgRms[5]		= rm_challenge2d_fire_bubbles;
+	global.chlgRms[6]		= rm_challenge2e_call_methods;
+	global.chlgRms[7]		= rm_challenge3a_conditionals;
+	global.chlgRms[8]		= rm_challenge3b_while;
+	global.chlgRms[9]		= rm_challenge3c_for;
+	global.chlgRms[10]		= rm_challenge4a_adv_fire;
+	global.chlgRms[11]		= rm_challenge4b_water;
+	global.chlgRms[12]		= rm_challenge4c_earth;
+	
 
 	//global.sliderBars;							// stores the id's of the slider bars for potato skin drawing
 	// ^ not used because called after the values of the array already set

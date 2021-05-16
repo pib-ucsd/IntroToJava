@@ -7,14 +7,16 @@ if(visible && image_alpha){
 	}
 	if(notebook){ // currently in the notebook
 		global.ignoreNextButton = false;
-		room_goto(global.rmnum);
+		//room_goto(global.rmnum);
+		room_goto(global.currRmId);
 		notebook = false;
 		room_set_persistent(global.rmnum, false)
-		show_debug_message(room_get_name(global.rmnum));
+		//show_debug_message(room_get_name(global.rmnum));
 		//room_persistent = false;
 		//alarm[0] = 2;
 		exit;
 	}
+	global.currRmId = room;
 	// want to go to notebook
 	room_persistent = true;
 	notebook = true;

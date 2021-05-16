@@ -11,3 +11,6 @@ if(instance_exists(o_notebook_widget)){
 }
 window_set_cursor(cr_default);
 room_goto(rm_start);
+if(room_persistent) {
+	room_persistent = false;	
+}

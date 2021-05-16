@@ -24,54 +24,67 @@ if(leftReleased && !global.paused){
 				case 0:
 					global.pagenum = 0;
 					global.pageMax = 3;
+					global.chlgRmInd = 0;
 					break;
 				case 1:
 					global.pagenum = 4;
 					global.pageMax = 7;
+					global.chlgRmInd = 2;
 					break;
 				case 2:
 					global.pagenum = 8;
 					global.pageMax = 8;
+					global.chlgRmInd = 3;
 					break;
 				case 3:
 					global.pagenum = 9;
 					global.pageMax = 13;
+					global.chlgRmInd = 4;
 					break;
 				case 4:
 					global.pagenum = 14;
 					global.pageMax = 17;
+					global.chlgRmInd = 5;
 					break;
 				case 5:
 					global.pagenum = 18;
 					global.pageMax = 21;
+					global.chlgRmInd = 6;
 					break;
 				case 6:
 					global.pagenum = 22;
 					global.pageMax = 24;
+					global.chlgRmInd = 7;
 					break;
 				case 7:
 					global.pagenum = 25;
 					global.pageMax = 26;
+					global.chlgRmInd = 8;
 					break;
 				case 8:
 					global.pagenum = 27;
 					global.pageMax = 28;
+					global.chlgRmInd = 9;
 					break;
 				case 9:
 					global.pagenum = 29;
 					global.pageMax = 32;
+					global.chlgRmInd = 10;
 					break;
 				case 10:
 					global.pagenum = 33;
 					global.pageMax = 36;
+					global.chlgRmInd = 11;
 					break;
 				case 11:
 					global.pagenum = 37;
 					global.pageMax = 41;
+					global.chlgRmInd = 12;
 					break;
 				case 12:
 					global.pagenum = 42;
 					global.pageMax = 45;
+					global.chlgRmInd = 13;
 					break;
 				default:
 					global.pagenum = 0;

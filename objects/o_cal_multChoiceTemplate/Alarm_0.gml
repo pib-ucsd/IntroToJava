@@ -2,7 +2,7 @@
 // You can write your code in this editor
 var mX = mouse_x;
 var mY = mouse_y;
-var yP = (mY - y)/sprite_width; // yP stands for y processed
+var yP = (mY - y)/sprite_height; // yP stands for y processed
 if (mX > xStart && mX < xEnd) {
 	if(yP > 0.11481 && yP < 0.18704) {
 		window_set_cursor(cr_handpoint);
@@ -20,3 +20,7 @@ if (mX > xStart && mX < xEnd) {
 		window_set_cursor(cr_default);
 	}
 }
+else {
+	window_set_cursor(cr_default);
+}
+alarm[0] = 10;
