@@ -23,7 +23,7 @@ scenes[ind++] = {
 	// 2nd scene
 scenes[ind++] = {
 	spInd: bg_grayBuilding,
-	rmInd: rm_scene2_2,
+	rmInd: rm_scene2_3,
 	title: "Variables",
 	index: ind,
 	scenenum: 3,
@@ -32,7 +32,7 @@ scenes[ind++] = {
 	// 3rd scene
 scenes[ind++] = {
 	spInd: bg_building,
-	rmInd: rm_scene2_4,
+	rmInd: rm_scene2_5,
 	title: "Arithmetic",
 	index: ind,
 	scenenum: 5,
@@ -44,7 +44,7 @@ scenes[ind++] = {
 	rmInd: rm_scene2_6,
 	title: "Arrays",
 	index: ind,
-	scenenum: 7,
+	scenenum: 6, // 6 includes the 13 multiple choice, 7 doesn't. 7 => rm_65
 	dia: 0,
 	moreSprites: {
 		sind: s_GQ,
@@ -57,7 +57,7 @@ scenes[ind++] = {
 	rmInd: rm_scene2_7,
 	title: "More Variables",
 	index: ind,
-	scenenum: 9,
+	scenenum: 8,
 	dia: 0,
 	moreSprites: {
 		sind: s_loady,
@@ -67,7 +67,7 @@ scenes[ind++] = {
 	// 6th scene
 scenes[ind++] = {
 	spInd: bg_building,
-	rmInd: rm_scene2_8,
+	rmInd: rm_scene2_75,
 	title: "Method Calls",
 	index: ind,
 	scenenum: 9,
@@ -80,22 +80,23 @@ scenes[ind++] = {
 	// 7th scene
 scenes[ind++] = {
 	spInd: bg_underwaterGate,
-	rmInd: rm_scene2_10,
+	rmInd: rm_scene3_1,
 	title: "Conditionals",
 	index: ind,
-	scenenum: 10,
+	scenenum: 13,
 	dia: 0,
 };
 	// 8th scene
 scenes[ind++] = {
 	spInd: bg_underwaterGateOpen,
-	rmInd: rm_scene3_25,
+	rmInd: rm_scene3_2,
 	title: "While Loop",
 	index: ind,
 	moreSprites: {
 		sind: s_GS,
 		xx: .5, yy: 0, ww: .5, hh: 1
-	}
+	},
+	scenenum: 14,
 };
 	// 9th scene
 scenes[ind++] = {
@@ -106,17 +107,19 @@ scenes[ind++] = {
 	moreSprites: {
 		sind: spr_portal,
 		xx: .5, yy: .5, ww: .5, hh: .5
-	}
+	},
+	scenenum: 17,
 };
 	// 10th scene
 scenes[ind++] = {
 	spInd: bg_candyland,
-	rmInd: rm_scene3_4,
+	rmInd: rm_scene4_1,
 	title: "Classes",
 	index: ind,
 	moreSprites: {
 		sind: spr_fire_elem
-	}
+	},
+	scenenum: 19,
 };
 	// 11th scene
 scenes[ind++] = {
@@ -126,7 +129,8 @@ scenes[ind++] = {
 	index: ind,
 	moreSprites: {
 		sind: spr_water_elem
-	}
+	},
+	scenenum: 20,
 };
 	// 12th scene
 scenes[ind++] = {
@@ -136,7 +140,8 @@ scenes[ind++] = {
 	index: ind,
 	moreSprites: {
 		sind: spr_earth_elem
-	}
+	},
+	scenenum: 21,
 };
 	// 13th scene
 scenes[ind++] = {
@@ -146,21 +151,25 @@ scenes[ind++] = {
 	index: ind,
 	moreSprites: {
 		sind: spr_air_elem
-	}
+	},
+	scenenum: 22,
 };
 	// 14th scene
 scenes[ind++] = {
 	spInd: bg_dino,
 	rmInd: rm_scene4_5,
 	title: "Fun Dialogue",
-	index: ind
+	index: ind,
+	scenenum: 23,
 };
 	// 15th scene
 scenes[ind++] = {
 	spInd: bg_arena,
-	rmInd: rm_game,
+	rmInd: rm_scene5_15,
 	title: "Minigame",
-	index: ind
+	index: ind,
+	scenenum: 25,
+	
 };
 
 

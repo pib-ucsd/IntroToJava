@@ -1,4 +1,5 @@
 function scr_check_answer() {
+	
 	if(!global.selectedID){
 		scr_answer_feedback(false);
 		return -1;
@@ -7,7 +8,8 @@ function scr_check_answer() {
 	if(is_array(answers)){
 		//show_debug_message("is array");
 		for(var i = 0; i < array_length(answers); i++) {
-			if(string_replace_all(keyboard_string + aft, " ", "") == string_replace_all(answers[i], " ", "")) {
+			if( keyboard_string == "" or 
+			string_replace_all(keyboard_string + aft, " ", "") == string_replace_all(answers[i], " ", "")) {
 				instance_destroy(global.selectedID);
 				str = "";
 				keyboard_string = "";
@@ -31,7 +33,8 @@ function scr_check_answer() {
 	}
 	else {
 		//show_debug_message("is not array");
-		if(string_replace_all(keyboard_string + aft, " ", "") == string_replace_all(answers, " ", "")) {
+		if(keyboard_string == "" or 
+		string_replace_all(keyboard_string + aft, " ", "") == string_replace_all(answers, " ", "")) {
 			instance_destroy(global.selectedID);
 			str = "";
 			keyboard_string = "";
