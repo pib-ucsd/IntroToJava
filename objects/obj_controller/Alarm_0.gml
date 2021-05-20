@@ -11,7 +11,7 @@ else {
 }
 
 with (element) {
-	direction = move_towards_point(room_width, room_height, 5);
+	//move_towards_point(-150, y, 5);
 }
 
 scr_difficulty_speed();

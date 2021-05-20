@@ -1,4 +1,5 @@
 var offset = 68;
+draw_set_halign(fa_left);
 var fnt = draw_get_font();
 var clr = draw_get_color();
 draw_set_alpha(0.6);
