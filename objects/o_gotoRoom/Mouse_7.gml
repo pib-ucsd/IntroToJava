@@ -8,7 +8,15 @@ if ( point_in_rectangle(mouse_x, mouse_y, x, y, x+targetWidth, y+targetHeight)){
 		global.scenenum = scenenum; 
 		global.rmnum = rmInd;
 		global.dia = 0;
+		if(scenenum != 1) {
+			with(o_notebook_widget) {
+				visible = true;
+				global.notebookWidgetVisible = true;
+			}
+		}
 	}
+	
+	
 	
 	room_goto(rmInd);
 }

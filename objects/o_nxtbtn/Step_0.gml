@@ -172,7 +172,7 @@ if(leftReleased && !global.paused){
 					o_notebook_widget.visible = true;
 				}
 				else {
-					instance_create_depth(1762, 45, 0, o_notebook_widget);
+					instance_create_depth(1762, 45, -1000, o_notebook_widget);
 					with(o_notebook_widget) visible = true;
 				}
 				global.notebookWidgetVisible = true;

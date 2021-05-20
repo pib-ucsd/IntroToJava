@@ -13,3 +13,6 @@ room_goto(rm_start);
 if(room_persistent) {
 	room_persistent = false;	
 }
+if(instance_exists(o_notebook_widget)){
+	global.notebookWidgetVisible = false
+}
