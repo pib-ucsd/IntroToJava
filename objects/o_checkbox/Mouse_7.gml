@@ -8,3 +8,5 @@ with(o_checkbox){
 	obj_controller.selectedDiff = tempDiff;
 }
 image_index = 1;
+
+window_set_cursor(cr_default);
