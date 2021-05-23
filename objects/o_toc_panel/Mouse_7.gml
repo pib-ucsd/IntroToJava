@@ -16,7 +16,8 @@ while((!found && pg-1 < array_length(img)) && (img[pg] <= global.pageMax)){
 	pg++;
 }
 if(found){
-	o_not.image_index = img[pg];
+	show_debug_message("found");
+	o_not.imgind = img[pg-1];
 	if(instance_exists(o_next) && pg != global.pageMax){
 		o_not.next_button = noone;
 		instance_destroy(o_next);

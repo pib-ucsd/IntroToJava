@@ -17,6 +17,7 @@ topics[8]	= "For Loop";
 topics[9]	= "Classes Intro";
 topics[10]	= "Adv. Methods";
 
+img[12]		= 1000	//Just to prevent html index out of range error
 img[11]		= 45	//References Vs Values
 img[0]		= 1		//Basics & Syntax
 img[1]		= 4		//Variables

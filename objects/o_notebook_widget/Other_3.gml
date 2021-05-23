@@ -1,1 +1,1 @@
-show_debug_message("notebook widget destroyed");
+show_debug_message("notebook widget game end");
