@@ -1,18 +1,21 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+if (x > room_width || x + targetWidth < 0) 
+	exit
 
 // draw the background image
-draw_sprite_ext(
-	sprite_index, 0, x, y, 
-	targetWidth / sprite_width,
-	targetHeight / sprite_height, 
-	0, c_white, 1
-);
+if (rmInd != undefined){
+	draw_sprite_ext(
+		sprite_index, 0, x, y, 
+		targetWidth / sprite_width,
+		targetHeight / sprite_height, 
+		0, c_white, 1
+	);
+}
 
 // draw the optional character
 if (moreSprites != undefined){
-	
 	var xx = get(moreSprites.xx, 0.25)*targetWidth,
 		yy = get(moreSprites.yy, 0.25)*targetHeight,
 		ww = get(moreSprites.ww, 0.5)*targetWidth,
@@ -28,6 +31,8 @@ if (moreSprites != undefined){
 }
 
 // draw the title text
-draw_set_color(c_black);
-draw_set_font(font_chlgs3);
-draw_text(x, y-40, string(index) + ": "+title);
+if (title != undefined){
+	draw_set_color(c_black);
+	draw_set_font(font_chlgs3);
+	draw_text(x, y-40, string(index) + ": "+title);
+}

@@ -1,5 +1,5 @@
 /// grid of scene boxes!
-var totalScenes = 15;
+var totalScenes = 16;
 
 
 // how to display the grids on this page
@@ -18,7 +18,6 @@ scenes[ind++] = {
 	title: "Hello World!",
 	index: ind,
 	scenenum: 1,
-	dia: 0
 };
 	// 2nd scene
 scenes[ind++] = {
@@ -27,7 +26,6 @@ scenes[ind++] = {
 	title: "Variables",
 	index: ind,
 	scenenum: 3,
-	dia: 0
 };
 	// 3rd scene
 scenes[ind++] = {
@@ -36,7 +34,6 @@ scenes[ind++] = {
 	title: "Arithmetic",
 	index: ind,
 	scenenum: 5,
-	dia: 0,
 };
 	// 4th scene
 scenes[ind++] = {
@@ -45,7 +42,6 @@ scenes[ind++] = {
 	title: "Arrays",
 	index: ind,
 	scenenum: 6, // 6 includes the 13 multiple choice, 7 doesn't. 7 => rm_65
-	dia: 0,
 	moreSprites: {
 		sind: s_GQ,
 		xx: .5, yy: .5, ww: .5, hh: .5
@@ -58,7 +54,6 @@ scenes[ind++] = {
 	title: "More Variables",
 	index: ind,
 	scenenum: 8,
-	dia: 0,
 	moreSprites: {
 		sind: s_loady,
 		xx: -0.25, yy: 0.25, ww: .75, hh: .75
@@ -70,8 +65,7 @@ scenes[ind++] = {
 	rmInd: rm_scene2_75,
 	title: "Method Calls",
 	index: ind,
-	scenenum: 9,
-	dia: 0,
+	scenenum: 10,
 	moreSprites: {
 		sind: s_potat,
 		xx: 0.2, yy: .3, ww: .35, hh: .7
@@ -84,7 +78,6 @@ scenes[ind++] = {
 	title: "Conditionals",
 	index: ind,
 	scenenum: 13,
-	dia: 0,
 };
 	// 8th scene
 scenes[ind++] = {
@@ -171,8 +164,13 @@ scenes[ind++] = {
 	scenenum: 25,
 	
 };
-
-
+	// the dino on the bottom
+scenes[ind++] = {
+	index: ind,
+	moreSprites: {
+		sind: spr_potato_back
+	}
+};
 
 // assuming there is a grid centered in the room
 // specify the padding left, right, top, bottom
@@ -196,19 +194,27 @@ for (var i=0; i<totalScenes; i++){
 	}
 	
 	with(instance_create_depth(curX, curY, 0, o_gotoRoom)){
-		sprite_index = scenes[i].spInd;
-		rmInd = scenes[i].rmInd;
-		title = scenes[i].title;
+		
+		// some vars taht always exist
 		index = scenes[i].index;
 		targetWidth = gridBoxWidthPlusSep - gridBoxHorSep;
 		targetHeight = gridBoxHeightPlusSep - gridBoxVerSep;
 		pageMax = ceil(totalScenes/(numRows*numCols));
 		
-		if (variable_struct_exists(scenes[i], "scenenum"))
+		// clicking to a new room
+		if (variable_struct_exists(scenes[i], "rmInd")){
+			sprite_index = scenes[i].spInd;
+			rmInd = scenes[i].rmInd;
+			title = scenes[i].title;
 			scenenum = scenes[i].scenenum;
+		}
+		
+		// in case in the future there is a specific line of dialogue we want to land on?
 		if (variable_struct_exists(scenes[i], "dia"))
 			dia = scenes[i].dia;
 		else dia = 0;
+		
+		// the extra sprite to draw on top of the background
 		if (variable_struct_exists(scenes[i], "moreSprites"))
 			moreSprites = scenes[i].moreSprites;
 	}
