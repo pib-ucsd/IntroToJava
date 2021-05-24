@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"bg_building","path":"sprites/bg_building/bg_building.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "bg_building",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -60,7 +60,7 @@
     "eventStubScript": null,
     "parent": {"name":"bg_bedroom","path":"sprites/bg_bedroom/bg_bedroom.yy",},
     "resourceVersion": "1.3",
-    "name": "",
+    "name": "bg_bedroom",
     "tags": [],
     "resourceType": "GMSequence",
   },

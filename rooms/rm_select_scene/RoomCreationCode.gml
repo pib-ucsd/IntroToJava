@@ -13,7 +13,7 @@ var scenes = [];
 
 	// 1st scene
 scenes[ind++] = {
-	spInd: bg_bedroom,
+	spInd: bg_bedroomSmall,
 	rmInd: rm_scene2_1,
 	title: "Hello World!",
 	index: ind,
@@ -21,7 +21,7 @@ scenes[ind++] = {
 };
 	// 2nd scene
 scenes[ind++] = {
-	spInd: bg_grayBuilding,
+	spInd: bg_grayBuildingSmall,
 	rmInd: rm_scene2_3,
 	title: "Variables",
 	index: ind,
@@ -29,7 +29,7 @@ scenes[ind++] = {
 };
 	// 3rd scene
 scenes[ind++] = {
-	spInd: bg_building,
+	spInd: bg_buildingSmall,
 	rmInd: rm_scene2_5,
 	title: "Arithmetic",
 	index: ind,
@@ -38,7 +38,7 @@ scenes[ind++] = {
 };
 	// 4th scene
 scenes[ind++] = {
-	spInd: bg_building,
+	spInd: bg_buildingSmall,
 	rmInd: rm_scene2_6,
 	title: "Arrays",
 	index: ind,
@@ -51,7 +51,7 @@ scenes[ind++] = {
 };
 	// 5th scene
 scenes[ind++] = {
-	spInd: bg_building,
+	spInd: bg_buildingSmall,
 	rmInd: rm_scene2_7,
 	title: "More Variables",
 	index: ind,
@@ -64,7 +64,7 @@ scenes[ind++] = {
 };
 	// 6th scene
 scenes[ind++] = {
-	spInd: bg_building,
+	spInd: bg_buildingSmall,
 	rmInd: rm_scene2_75,
 	title: "Method Calls",
 	index: ind,
@@ -77,7 +77,7 @@ scenes[ind++] = {
 };
 	// 7th scene
 scenes[ind++] = {
-	spInd: bg_underwaterGate,
+	spInd: bg_underwaterGateSmall,
 	rmInd: rm_scene3_1,
 	title: "Conditionals",
 	index: ind,
@@ -86,7 +86,7 @@ scenes[ind++] = {
 };
 	// 8th scene
 scenes[ind++] = {
-	spInd: bg_underwaterGateOpen,
+	spInd: bg_underwaterGateOpenSmall,
 	rmInd: rm_scene3_2,
 	title: "While Loop",
 	index: ind,
@@ -99,7 +99,7 @@ scenes[ind++] = {
 };
 	// 9th scene
 scenes[ind++] = {
-	spInd: bg_underwaterGateOpen,
+	spInd: bg_underwaterGateOpenSmall,
 	rmInd: rm_scene3_3,
 	title: "For Loop",
 	index: ind,
@@ -112,7 +112,7 @@ scenes[ind++] = {
 };
 	// 10th scene
 scenes[ind++] = {
-	spInd: bg_candyland,
+	spInd: bg_candylandSmall,
 	rmInd: rm_scene4_1,
 	title: "Classes",
 	index: ind,
@@ -124,7 +124,7 @@ scenes[ind++] = {
 };
 	// 11th scene
 scenes[ind++] = {
-	spInd: bg_candyland,
+	spInd: bg_candylandSmall,
 	rmInd: rm_scene4_2,
 	title: "Classes + Objects",
 	index: ind,
@@ -136,7 +136,7 @@ scenes[ind++] = {
 };
 	// 12th scene
 scenes[ind++] = {
-	spInd: bg_candyland,
+	spInd: bg_candylandSmall,
 	rmInd: rm_scene4_3,
 	title: "Variable Scope",
 	index: ind,
@@ -148,7 +148,7 @@ scenes[ind++] = {
 };
 	// 13th scene
 scenes[ind++] = {
-	spInd: bg_candyland,
+	spInd: bg_candylandSmall,
 	rmInd: rm_scene4_4,
 	title: "Advanced Methods",
 	index: ind,
