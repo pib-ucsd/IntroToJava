@@ -17,8 +17,8 @@
   "width": 480,
   "height": 270,
   "textureGroupId": {
-    "name": "txg_bg",
-    "path": "texturegroups/txg_bg",
+    "name": "texturegroup1",
+    "path": "texturegroups/texturegroup1",
   },
   "swatchColours": null,
   "gridX": 0,
