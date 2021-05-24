@@ -1,15 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if (x > room_width || x + targetWidth < 0) 
-	exit
+if (outsideRoom) exit
 
 // draw the background image
 if (rmInd != undefined){
 	draw_sprite_ext(
 		sprite_index, 0, x, y, 
-		targetWidth / sprite_width,
-		targetHeight / sprite_height, 
+		image_xscale,
+		image_yscale, 
 		0, c_white, 1
 	);
 }

@@ -34,6 +34,7 @@ scenes[ind++] = {
 	title: "Arithmetic",
 	index: ind,
 	scenenum: 5,
+	mc: 1
 };
 	// 4th scene
 scenes[ind++] = {
@@ -45,7 +46,8 @@ scenes[ind++] = {
 	moreSprites: {
 		sind: s_GQ,
 		xx: .5, yy: .5, ww: .5, hh: .5
-	}
+	},
+	mc: 1
 };
 	// 5th scene
 scenes[ind++] = {
@@ -57,7 +59,8 @@ scenes[ind++] = {
 	moreSprites: {
 		sind: s_loady,
 		xx: -0.25, yy: 0.25, ww: .75, hh: .75
-	}
+	},
+	mc: 2
 };
 	// 6th scene
 scenes[ind++] = {
@@ -69,7 +72,8 @@ scenes[ind++] = {
 	moreSprites: {
 		sind: s_potat,
 		xx: 0.2, yy: .3, ww: .35, hh: .7
-	}
+	},
+	mc: 3
 };
 	// 7th scene
 scenes[ind++] = {
@@ -78,6 +82,7 @@ scenes[ind++] = {
 	title: "Conditionals",
 	index: ind,
 	scenenum: 13,
+	mc: 4
 };
 	// 8th scene
 scenes[ind++] = {
@@ -90,6 +95,7 @@ scenes[ind++] = {
 		xx: .5, yy: 0, ww: .5, hh: 1
 	},
 	scenenum: 14,
+	mc: 4
 };
 	// 9th scene
 scenes[ind++] = {
@@ -102,6 +108,7 @@ scenes[ind++] = {
 		xx: .5, yy: .5, ww: .5, hh: .5
 	},
 	scenenum: 17,
+	mc: 5
 };
 	// 10th scene
 scenes[ind++] = {
@@ -113,6 +120,7 @@ scenes[ind++] = {
 		sind: spr_fire_elem
 	},
 	scenenum: 19,
+	mc: 6
 };
 	// 11th scene
 scenes[ind++] = {
@@ -124,6 +132,7 @@ scenes[ind++] = {
 		sind: spr_water_elem
 	},
 	scenenum: 20,
+	mc: 6
 };
 	// 12th scene
 scenes[ind++] = {
@@ -135,6 +144,7 @@ scenes[ind++] = {
 		sind: spr_earth_elem
 	},
 	scenenum: 21,
+	mc: 6
 };
 	// 13th scene
 scenes[ind++] = {
@@ -146,6 +156,7 @@ scenes[ind++] = {
 		sind: spr_air_elem
 	},
 	scenenum: 22,
+	mc: 6
 };
 	// 14th scene
 scenes[ind++] = {
@@ -154,17 +165,18 @@ scenes[ind++] = {
 	title: "Fun Dialogue",
 	index: ind,
 	scenenum: 23,
+	mc: 6
 };
 	// 15th scene
 scenes[ind++] = {
 	spInd: bg_arena,
-	rmInd: rm_scene5_15,
+	rmInd: rm_scene5_3,
 	title: "Minigame",
 	index: ind,
-	scenenum: 25,
-	
+	scenenum: 26,
+	mc: 7
 };
-	// the dino on the bottom
+	// the extra images on the bottom
 scenes[ind++] = {
 	index: ind,
 	moreSprites: {
@@ -207,6 +219,13 @@ for (var i=0; i<totalScenes; i++){
 			rmInd = scenes[i].rmInd;
 			title = scenes[i].title;
 			scenenum = scenes[i].scenenum;
+			
+			image_xscale = targetWidth / sprite_width;
+			image_yscale = targetHeight / sprite_height;
+			
+			if (variable_struct_exists(scenes[i], "mc"))
+				mc = scenes[i].mc;
+			else mc = 0;
 		}
 		
 		// in case in the future there is a specific line of dialogue we want to land on?
