@@ -1,5 +1,5 @@
 /// grid of scene boxes!
-var totalScenes = 16;
+var totalScenes = 18;
 
 
 // how to display the grids on this page
@@ -177,12 +177,16 @@ scenes[ind++] = {
 	mc: 7
 };
 	// the extra images on the bottom
-scenes[ind++] = {
-	index: ind,
-	moreSprites: {
-		sind: spr_potato_back
-	}
-};
+for (var i=0; i<3; i++){
+	scenes[ind++] = {
+		index: ind,
+		moreSprites: {
+			sind: s_cuteDino,
+			ww: 1, hh: 1,
+			xx: 0, yy: 0,
+		}
+	};
+}
 
 // assuming there is a grid centered in the room
 // specify the padding left, right, top, bottom

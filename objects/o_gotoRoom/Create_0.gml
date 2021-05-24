@@ -14,4 +14,4 @@ lastPage = 0;
 // variables to keep track of states
 outsideRoom = true;
 mouseIn = false;
-preMouseIn = undefined;
+preMouseIn = false;

@@ -74,6 +74,7 @@
     {"id":{"name":"s_challenge4a","path":"sprites/s_challenge4a/s_challenge4a.yy",},"order":33,},
     {"id":{"name":"s_challenge4bi","path":"sprites/s_challenge4bi/s_challenge4bi.yy",},"order":35,},
     {"id":{"name":"s_challenge4c","path":"sprites/s_challenge4c/s_challenge4c.yy",},"order":37,},
+    {"id":{"name":"s_cuteDino","path":"sprites/s_cuteDino/s_cuteDino.yy",},"order":18,},
     {"id":{"name":"s_challenge4d","path":"sprites/s_challenge4d/s_challenge4d.yy",},"order":39,},
     {"id":{"name":"s_not","path":"sprites/s_not/s_not.yy",},"order":1,},
     {"id":{"name":"s_notebook","path":"sprites/s_notebook/s_notebook.yy",},"order":3,},
