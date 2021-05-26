@@ -160,6 +160,7 @@ if(leftReleased && !global.paused){
 				room_goto_next();
 			}
 			else if(eventFlag == eventCodes.bigShake){show_debug_message("bigshake");
+				if (!instance_exists(o_shake)) instance_create_depth(0, 0, 0, o_shake);
 				o_shake.shake = true;
 			}
 			else if(eventFlag == eventCodes.miniGame){show_debug_message("minigame");

@@ -1,4 +1,4 @@
-prevNot = o_not.image_index;
+prevNot = o_not.imgind;
 vidInst = id;
 playInst = id;
 restartInst = id;

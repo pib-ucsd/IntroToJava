@@ -61,6 +61,14 @@ function scr_global_initializations() {
 	global.chlgRms[11]		= rm_challenge4b_water;
 	global.chlgRms[12]		= rm_challenge4c_earth;
 	
+	global.mcqs[6]			= [2, 4, 13, 14, 15];
+	global.mcqs[0]			= [10];
+	global.mcqs[1]			= [1, 9, 11, 12];
+	global.mcqs[2]			= [7, 8];
+	global.mcqs[3]			= [3];
+	global.mcqs[4]			= [5];
+	global.mcqs[5]			= [6];
+	global.indmcq			= 0;
 
 	//global.sliderBars;							// stores the id's of the slider bars for potato skin drawing
 	// ^ not used because called after the values of the array already set
