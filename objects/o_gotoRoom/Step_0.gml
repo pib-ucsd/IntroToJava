@@ -4,7 +4,7 @@
 outsideRoom = (x > room_width || x + targetWidth < 0);
 
 // can only click on an object if in room, not moving, and leads to new room
-mouseIn = !outsideRoom && hspeed==0 && 
+mouseIn = !outsideRoom && hspeed==0 && rmInd!=undefined &&
 	point_in_rectangle(mouse_x, mouse_y, x, y, x+targetWidth, y+targetHeight);
 
 
@@ -13,7 +13,7 @@ if (mouseIn != preMouseIn){
 	else event_perform_object(o_changeMouseParent, ev_mouse, ev_mouse_leave);
 }
 
-if (mouseIn && mouse_check_button_released(mb_left) && rmInd!=undefined){
+if (mouseIn && mouse_check_button_released(mb_left)){
 	
 	global.scenenum = scenenum; 
 	global.rmnum = rmInd;
