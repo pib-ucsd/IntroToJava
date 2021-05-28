@@ -20,7 +20,7 @@ if (mouseIn && mouse_check_button_released(mb_left)){
 	global.dia = dia;
 	global.mc = mc;
 		
-	if(scenenum != 1) {
+	if(scenenum != 0) {
 		with(o_notebook_widget) {
 			visible = true;
 			global.notebookWidgetVisible = true;
