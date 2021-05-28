@@ -14,10 +14,10 @@ var scenes = [];
 	// 1st scene
 scenes[ind++] = {
 	spInd: bg_bedroomSmall,
-	rmInd: rm_scene2_1,
+	rmInd: rm_opening_dialogue,
 	title: "Hello World!",
 	index: ind,
-	scenenum: 1,
+	scenenum: 0,
 };
 	// 2nd scene
 scenes[ind++] = {
