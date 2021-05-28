@@ -2,7 +2,7 @@ ind = 0;
 x = room_width - 80;
 y = room_height - 80;
 
-if(o_not.image_index >= o_not.maxAllowed){
+if(o_not.imgind >= o_not.maxAllowed){
 	if(image_blend != c_gray){
 		image_blend = c_gray;
 		if(!instance_exists(o_next)){

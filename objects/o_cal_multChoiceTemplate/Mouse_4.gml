@@ -9,7 +9,7 @@ if(!correct){ // can only select the correct answer once
 	{
 		if(!(mc == 12 || mc == 13 || ((mc+1) % 3 == 0 && mc != 0 && mc != 14))) {
 		    show_debug_message("MultChoice: 'A' Pressed")
-			if(global.mcq_answers[global.mc] == 0){
+			if(global.mcq_answers[img] == 0){
 				correct = true;
 				grn_arrow = instance_create_depth(room_width - 400, room_height - 250, depth - 1, o_green_arrow);
 	        }
@@ -23,7 +23,7 @@ if(!correct){ // can only select the correct answer once
 	if point_in_rectangle(mouse_x, mouse_y, x + sprite_width*0.56098, y + sprite_height*0.34537, x + sprite_width*0.61765, y + sprite_height*0.42037)
 	{
 	    show_debug_message("MultChoice: 'B' Pressed")
-		if(global.mcq_answers[global.mc] == 1){
+		if(global.mcq_answers[img] == 1){
 			correct = true;
 			grn_arrow = instance_create_depth(room_width - 400, room_height - 250, depth - 1, o_green_arrow);
 		}
@@ -36,7 +36,7 @@ if(!correct){ // can only select the correct answer once
 	if point_in_rectangle(mouse_x, mouse_y, x + sprite_width*0.56098, y + sprite_height*0.58611, x + sprite_width*0.61765, y + sprite_height*0.65926)
 	{
 	    show_debug_message("MultChoice: 'C' Pressed")
-		if(global.mcq_answers[global.mc] == 2){
+		if(global.mcq_answers[img] == 2){
 			correct = true;
 			grn_arrow = instance_create_depth(room_width - 400, room_height - 250, depth - 1, o_green_arrow);
 		}
@@ -50,7 +50,7 @@ if(!correct){ // can only select the correct answer once
 	{
 		if(!(mc == 12 || mc == 13 || ((mc+1) % 3 == 0 && mc != 0 && mc != 14))) {
 		    show_debug_message("MultChoice: 'D' Pressed")
-			if(global.mcq_answers[global.mc] == 3){
+			if(global.mcq_answers[img] == 3){
 				correct = true;
 				grn_arrow = instance_create_depth(room_width - 400, room_height - 250, depth - 1, o_green_arrow);
 			}
