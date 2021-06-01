@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "s_adv_method_scope_pt1",
-    "path": "sprites/s_adv_method_scope_pt1/s_adv_method_scope_pt1.yy",
+    "name": "s_adv_method_scope",
+    "path": "sprites/s_adv_method_scope/s_adv_method_scope.yy",
   },
   "solid": false,
   "visible": true,
