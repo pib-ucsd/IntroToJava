@@ -7,7 +7,7 @@ if(!correct){ // can only select the correct answer once
 	// check A pressed
 	if point_in_rectangle(mouse_x, mouse_y, x + sprite_width*0.56098, y + sprite_height*0.11481, x + sprite_width*0.61765, y + sprite_height*0.18704)
 	{
-		if(!(mc == 12 || mc == 13 || ((mc+1) % 3 == 0 && mc != 0 && mc != 14))) {
+		if(!(img == 12 || img == 13 || ((img+1) % 3 == 0 && img != 0 && img != 14))) {
 		    show_debug_message("MultChoice: 'A' Pressed")
 			if(global.mcq_answers[img] == 0){
 				correct = true;
@@ -48,7 +48,7 @@ if(!correct){ // can only select the correct answer once
 	// check D pressed
 	if point_in_rectangle(mouse_x, mouse_y, x + sprite_width*0.56098, y + sprite_height*0.82407, x + sprite_width*0.61765, y + sprite_height*0.89815)
 	{
-		if(!(mc == 12 || mc == 13 || ((mc+1) % 3 == 0 && mc != 0 && mc != 14))) {
+		if(!(img == 12 || img == 13 || ((img+1) % 3 == 0 && img != 0 && img != 14))) {
 		    show_debug_message("MultChoice: 'D' Pressed")
 			if(global.mcq_answers[img] == 3){
 				correct = true;

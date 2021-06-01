@@ -1,10 +1,10 @@
 /// @description Health Bar
 
 // enemy power level
-draw_set_font(fnt_health); 
+draw_set_font(font_TNR); 
 draw_set_color(c_black);
 draw_set_halign(fa_center);
-draw_text_transformed(x - string_width("Dino Powah") - 10, y + sprite_height / 2, "Dino Powah", 1.5, 1.5, 0);
+draw_text_transformed(x - string_width("Dino Powah") - 10, y + sprite_height / 2, "Dino Powah", 0.4, 0.4, 0);
 
 // Draw health bar
 var percent = (health / max_health) * 100;

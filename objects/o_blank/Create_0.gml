@@ -4,7 +4,7 @@ playInst = id;
 restartInst = id;
 image_speed = 0;
 
-offset = 120;
+offset = 170;
 
 vids = array_create(48, -1);
 
