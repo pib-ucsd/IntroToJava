@@ -1,8 +1,7 @@
 if(global.pausedMCQ){
 	exit;
 }
-global.rmnum++;
-global.scenenum++;
+
 if(global.indmcq < array_length(global.mcqs[global.mc]) - 1) {
 	global.indmcq++;
 	instance_destroy();
@@ -13,6 +12,8 @@ if(global.indmcq < array_length(global.mcqs[global.mc]) - 1) {
 else {
 	global.mc++;
 	global.indmcq = 0;
+	global.rmnum++;
+	global.scenenum++;
 	room_goto_next();
 	instance_destroy();
 }

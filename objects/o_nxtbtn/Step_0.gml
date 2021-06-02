@@ -98,6 +98,14 @@ if(leftReleased && !global.paused){
 					global.notebookByDialogue = true;
 					window_set_cursor(cr_default);
 					room_goto(rm_not2);
+					
+					if (instance_exists(o_notebook_widget)){
+						with(o_notebook_widget) {
+							visible = false;
+							global.notebookWidgetVisible = false;
+						}
+					}
+						
 				}
 			}
 			else if(eventFlag == eventCodes.flash){show_debug_message("flash");

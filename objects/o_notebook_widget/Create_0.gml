@@ -21,3 +21,9 @@ challengeArr[7] = o_challenge3b;
 challengeArr[8] = o_challenge4a;
 challengeArr[9] = o_challenge4bi;
 challengeArr[10]= o_challenge4c;*/
+
+
+
+x = 1762; 
+y = 45;
+//depth = -1000;
