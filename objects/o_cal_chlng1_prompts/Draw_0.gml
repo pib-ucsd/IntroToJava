@@ -3,7 +3,7 @@
 draw_self();
 draw_set_font(font_TNR);
 draw_set_color(c_silver);
-draw_text_ext_transformed(x+30,y+20,prompt,-1,(sprite_width),0.4,0.4,0);
+draw_text_ext_transformed(x+30,y+30,prompt,-1,(sprite_width),0.4,0.4,0);
 var textScale = .815 * 0.4; //0.4 from font change
 
 if(print) {
@@ -16,13 +16,13 @@ if(print) {
 	
 	for(var i = array_length(consoleArr) - 1; i + 1 > 0; i--){
 		if(i == array_length(consoleArr) - 1){
-			draw_text_transformed(x + 30, y + sprite_height - (20 + string_height(prompt)) * heightMultiplier * textScale, consoleArr[array_length(consoleArr) - heightMultiplier++], textScale, textScale, 0);
+			draw_text_transformed(x + 30, y + sprite_height - (30 + string_height(prompt)) * heightMultiplier * textScale, consoleArr[array_length(consoleArr) - heightMultiplier++], textScale, textScale, 0);
 		}
 		else if(i == array_length(consoleArr) - 2){
-			draw_text_transformed(x + 30, y + sprite_height - (11 + string_height(prompt)) * heightMultiplier * textScale, consoleArr[array_length(consoleArr) - heightMultiplier++], textScale, textScale, 0);
+			draw_text_transformed(x + 30, y + sprite_height - (17 + string_height(prompt)) * heightMultiplier * textScale, consoleArr[array_length(consoleArr) - heightMultiplier++], textScale, textScale, 0);
 		}
 		else{
-			draw_text_transformed(x + 30, y + sprite_height - 9 - (3 + string_height(prompt)) * heightMultiplier * textScale, consoleArr[array_length(consoleArr) - heightMultiplier++], textScale, textScale, 0);
+			draw_text_transformed(x + 30, y + sprite_height - 9 - (5 + string_height(prompt)) * heightMultiplier * textScale, consoleArr[array_length(consoleArr) - heightMultiplier++], textScale, textScale, 0);
 		}
 	}
 }

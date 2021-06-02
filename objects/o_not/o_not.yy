@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "s_notebook",
+    "path": "sprites/s_notebook/s_notebook.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
