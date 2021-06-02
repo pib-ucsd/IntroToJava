@@ -2,7 +2,7 @@ image_alpha = 0;
 alarm[0] = 2;
 xP = x+20;
 yP = y+70;
-draw_set_font(font_not);
+draw_set_font(font_TNR);
 						
 topics[11]	= "References Vs Values";
 topics[0]	= "Basics & Syntax";

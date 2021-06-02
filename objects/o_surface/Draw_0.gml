@@ -2,18 +2,18 @@
 prevFont = draw_get_font();
 prevColor = draw_get_color();
 draw_set_color(c_white);
-draw_set_font(font_not);
+draw_set_font(font_TNR);
 //draw_text_color(1110, 950, drawMode, c_white, c_white, c_white, c_white, 1);
 draw_text(1110, 950, drawMode);
 //draw_text(0, 0, string(mouse_x) + " " + string(mouse_y));
 //draw_text(0, 80, string(color_get_red(color)) + " " + string(color_get_green(color)) + " " + string(color_get_blue(color)));
 
-draw_set_font(font_colors);
-draw_text(1286, 109, color_get_red(color));
-draw_text(1286, 197, color_get_green(color));
-draw_text(1286, 280, color_get_blue(color));
+draw_set_font(font_TNR);
+draw_text_transformed(1286, 109, color_get_red(color), 0.5, 0.5, 0);
+draw_text_transformed(1286, 197, color_get_green(color), 0.5, 0.5, 0);
+draw_text_transformed(1286, 280, color_get_blue(color), 0.5, 0.5, 0);
 
-draw_text(size_x + 3, size_y + 5, size);
+draw_text_transformed(size_x + 3, size_y + 5, size, 0.5, 0.5, 0);
 
 draw_set_font(prevFont);
 draw_set_color(prevColor);

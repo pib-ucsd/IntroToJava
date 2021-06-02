@@ -11,5 +11,5 @@ else if(global.scenenum >= 4){
 	image_index = 1;
 }
 if(chars < 200){
-	chars += 0.4;
+	chars += 0.8;
 }

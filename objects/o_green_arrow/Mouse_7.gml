@@ -11,6 +11,8 @@ if(global.indmcq < array_length(global.mcqs[global.mc]) - 1) {
 }
 else {
 	global.mc++;
+	global.rmnum++;
+	global.scenenum++;
 	global.indmcq = 0;
 	global.rmnum++;
 	global.scenenum++;
