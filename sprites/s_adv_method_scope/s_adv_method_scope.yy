@@ -68,7 +68,7 @@
     "spriteId": {"name":"s_adv_method_scope","path":"sprites/s_adv_method_scope/s_adv_method_scope.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 0.6,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

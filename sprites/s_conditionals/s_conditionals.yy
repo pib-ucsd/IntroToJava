@@ -44,7 +44,7 @@
     "spriteId": {"name":"s_conditionals","path":"sprites/s_conditionals/s_conditionals.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 1.0,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

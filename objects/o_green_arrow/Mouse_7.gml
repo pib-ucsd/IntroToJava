@@ -14,8 +14,6 @@ else {
 	global.rmnum++;
 	global.scenenum++;
 	global.indmcq = 0;
-	global.rmnum++;
-	global.scenenum++;
 	room_goto_next();
 	instance_destroy();
 }

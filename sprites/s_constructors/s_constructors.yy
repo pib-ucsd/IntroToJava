@@ -47,7 +47,7 @@
     "spriteId": {"name":"s_constructors","path":"sprites/s_constructors/s_constructors.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 0.6,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

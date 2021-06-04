@@ -62,7 +62,7 @@
     "spriteId": {"name":"s_method_basics","path":"sprites/s_method_basics/s_method_basics.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 0.6,
+    "playbackSpeed": 6.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
