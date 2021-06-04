@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_scene3.mp3",
-  "duration": 213.773,
+  "soundFile": "snd_scene5_dark.mp3",
+  "duration": 128.057251,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_scene3",
+  "name": "snd_scene5_dark",
   "tags": [],
   "resourceType": "GMSound",
 }

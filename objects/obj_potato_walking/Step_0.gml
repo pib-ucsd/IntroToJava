@@ -8,7 +8,7 @@ if(global.paused){
 
 if(point_distance(obj_potato_walking.x, obj_potato_walking.y, 350, 196) > 1){
 	image_speed = 1;
-	move_towards_point(350, 196, 3);
+	move_towards_point(350, 196, 5);
 }else{
 	speed = 0;
 	instance_destroy();
