@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+chllng_hint = "";
 print = false;
 text = true;
 delay = 1000;

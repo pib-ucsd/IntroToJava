@@ -6,7 +6,7 @@ if(text){
 	text = false;
 }
 else{
-	prompt = "Remember to put only a space between variable type, variable name, and operators! ";
+	prompt = chllng_hint != "" ? chllng_hint : "Remember to put only a space between variable type, variable name, and operators! ";
 	text = true;
 }
 alarm[0] = delay;

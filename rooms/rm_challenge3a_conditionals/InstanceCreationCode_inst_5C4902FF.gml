@@ -1,1 +1,2 @@
+chllng_hint = "Two other boolean operators are '&&' and '||'. The first one means 'and' while the second one means 'or'. These are important for this challenge!";
 prompt = "Two other boolean operators are '&&' and '||'. The first one means 'and' while the second one means 'or'. These are important for this challenge!"

@@ -1,1 +1,2 @@
 prompt = "In the main function, fire1 is an object of class FirePowah. This means fire1 has access to the class variables and class methods.";
+chllng_hint = "In the main function, fire1 is an object of class FirePowah. This means fire1 has access to the class variables and class methods.";
