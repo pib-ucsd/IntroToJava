@@ -92,6 +92,7 @@
     {"id":{"name":"s_constructors","path":"sprites/s_constructors/s_constructors.yy",},"order":15,},
     {"id":{"name":"s_class","path":"sprites/s_class/s_class.yy",},"order":17,},
     {"id":{"name":"s_while_loop","path":"sprites/s_while_loop/s_while_loop.yy",},"order":19,},
+    {"id":{"name":"snd_thunder","path":"sounds/snd_thunder/snd_thunder.yy",},"order":11,},
     {"id":{"name":"s_conditionals","path":"sprites/s_conditionals/s_conditionals.yy",},"order":21,},
     {"id":{"name":"s_pass_var","path":"sprites/s_pass_var/s_pass_var.yy",},"order":23,},
     {"id":{"name":"s_method_basics","path":"sprites/s_method_basics/s_method_basics.yy",},"order":25,},

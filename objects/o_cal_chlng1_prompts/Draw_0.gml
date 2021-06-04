@@ -3,7 +3,7 @@
 draw_self();
 draw_set_font(font_TNR);
 draw_set_color(c_silver);
-draw_text_ext_transformed(x+30,y+30,prompt,-1,(sprite_width),0.4,0.4,0);
+draw_text_ext_transformed(x+50,y+50,prompt,-1, sprite_width*2.25,0.4,0.4,0);
 var textScale = .815 * 0.4; //0.4 from font change
 
 if(print) {

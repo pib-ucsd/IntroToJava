@@ -1,6 +1,6 @@
 {
   "compression": 0,
-  "volume": 0.1,
+  "volume": 0.3,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -10,14 +10,14 @@
     "name": "audiogroup_default",
     "path": "audiogroups/audiogroup_default",
   },
-  "soundFile": "snd_scene5_dark.mp3",
-  "duration": 128.057251,
+  "soundFile": "snd_thunder.mp3",
+  "duration": 5.621327,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",
   },
   "resourceVersion": "1.0",
-  "name": "snd_scene5_dark",
+  "name": "snd_thunder",
   "tags": [],
   "resourceType": "GMSound",
 }
