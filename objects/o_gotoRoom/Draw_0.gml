@@ -32,6 +32,6 @@ if (moreSprites != undefined){
 // draw the title text
 if (title != undefined){
 	draw_set_color(c_black);
-	draw_set_font(font_chlgs3);
-	draw_text(x, y-40, string(index) + ": "+title);
+	draw_set_font(font_TNR);
+	draw_text_transformed(x, y-40, string(index) + ": "+title, 0.4, 0.4, 0);
 }

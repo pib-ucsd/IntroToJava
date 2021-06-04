@@ -12,8 +12,13 @@ if(!global.ignoreNextButton){
 	}
 	show_debug_message("o_next to be destroyed");
 	
-	if (instance_exists(o_notebook_widget))
+	if (instance_exists(o_notebook_widget)){
 		o_notebook_widget.visible = true;
+
+		global.notebookWidgetVisible = true;
+		
+	}
+	else instance_create_depth(0,0,0,o_notebook_widget);
 	
 	global.notebookByDialogue = false;
 	instance_destroy();

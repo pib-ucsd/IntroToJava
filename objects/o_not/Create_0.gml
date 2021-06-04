@@ -5,3 +5,4 @@ right = instance_create_layer(0, 0, "instances", o_arrow_right_green);
 left = instance_create_layer(0, 0, "instances", o_arrow_left_red);
 next_button = noone;
 //show_debug_message("not stuff: " + string(global.pagenum) + " " + string(global.pageMax));
+

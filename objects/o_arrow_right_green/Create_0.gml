@@ -11,7 +11,7 @@ if(o_not.imgind >= o_not.maxAllowed){
 	}
 }
 else{
-	if(image_blend != c_lime){
-		image_blend = c_lime;
+	if(image_blend != c_green){
+		image_blend = c_green;
 	}
 }

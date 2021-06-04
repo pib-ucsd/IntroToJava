@@ -68,7 +68,7 @@ if(dia <= array_length_2d(global.dialogue, scenenum)){
 	}
 	
 #region draw text
-	draw_set_font(font_dia2);
+	draw_set_font(font_TNR);
 	draw_set_color(c_black);
 	draw_text(x+60,y+55,global.speak[scenenum,dia]);
 	draw_set_font(font_dia);

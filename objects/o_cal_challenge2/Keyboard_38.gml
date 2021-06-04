@@ -5,7 +5,7 @@ if(global.paused){
 // You can write your code in this editor
 
 if (y < 0) {
-	y += 8;
+	y += 15;
 	//global.challengeY = y;
-	with(o_cal_demo2_whiteBox) y += 8;
+	with(o_cal_demo2_whiteBox) y += 15;
 }
