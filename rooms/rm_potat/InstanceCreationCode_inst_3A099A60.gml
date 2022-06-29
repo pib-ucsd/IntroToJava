@@ -1,1 +1,0 @@
-global.sliderBars[0] = id;

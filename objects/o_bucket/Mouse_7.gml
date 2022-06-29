@@ -1,1 +1,0 @@
-o_surface.drawMode = "bucket";

@@ -1,1 +1,0 @@
-ds_queue_enqueue(global.consoleQueue, "rimac has a flamthrower: true");
